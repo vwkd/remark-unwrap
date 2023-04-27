@@ -13,7 +13,7 @@ interface Options {
  */
 const remarkUnwrap: Plugin<[Options?], Root> = (args) => {
   if (!args) {
-    throw new Error(`Missing arguments.`);
+    throw new Error(`remark-unwrap: missing arguments.`);
   }
 
   const { childTest, parentTest } = args;
